@@ -1,4 +1,4 @@
-# Environment variables and credentials
+# Secrets and credentials
 .env
 .env.*
 !.env.example
@@ -11,13 +11,12 @@ credentials.json
 service-account*.json
 secrets.yaml
 secret.yaml
-
-# Kubernetes and cloud credentials
+**/secrets/
 .kube/
 kubeconfig
 **/kubeconfig
 
-# Terraform state
+# Terraform sensitive files
 *.tfstate
 *.tfstate.*
 *.tfvars
